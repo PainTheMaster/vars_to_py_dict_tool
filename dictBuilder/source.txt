@@ -1,0 +1,23 @@
+tag_part_flow_chgng_mthd_liq = opt_uo_chgng_method_liq = 'liquid_port'
+part_flow_chgng_mthd_liq = "液体投入口"
+"""
+Flowsheet component for class Charging. Charging through liquid charging port. An ption for Liquid charging.
+"""
+
+tag_part_flow_chgng_mthd_shower = opt_uo_chgng_method_shower = 'shower'
+part_flow_chgng_mthd_shower = "常設シャワー"
+"""
+Flowsheet component for class Charging. Charging through the fixed shower. An ption for Liquid charging."""
+
+tag_part_flow_chgng_mthd_prssvesl = opt_uo_chgng_method_prssvesl = 'press_vessel'
+part_flow_chgng_mthd_prssvesl = "圧送容器"
+"""Flowsheet component for class Charging. Charging from a pressure vessel. An ption for Liquid charging.
+"""
+
+tag_part_flow_chgng_mthd_ = opt_uo_chgng_method_pwdr ='powder_port'
+part_flow_chgng_mthd_pwdr = "粉体投入口"
+"""Flowsheet component for class Charging. Charging through the power port. An ption for powder charging."""
+
+tag_part_flow_chgng_mthd_ = opt_uo_chgng_method_method_plchldr = 'placeholder'
+part_flow_chgng_mthd_plchldr = "<Placeholder: charging method>"
+"""Flowsheet component for class Charging. A place holder. An ption for Liquid charging."""

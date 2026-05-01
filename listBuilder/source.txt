@@ -1,0 +1,39 @@
+tag_part_flow_chgng_instr_ini = "tag_chgng_instr_ini"
+part_flow_chgng_instr_ini_jp = '仕込み開始'
+"""Flowseet component for class Charging. An action item of commencement of charging/dosing"""
+
+tag_part_flow_chgng_instr_end = "tag_chgng_instr_end"
+part_flow_chgng_instr_end_jp = '仕込み終了'
+"""Flowseet component for class Charging. An action item of end of charging/dosing"""
+
+tag_part_flow_chgng_rec_input = "tag_chgng_rec_input"
+part_flow_chgng_rec_input_jp = '仕込み量__________kg'
+"""Flowseet component for class Charging. A recording element for dispensed amount"""
+
+tag_part_flow_chgng_rec_lot= "tag_chgng_rec_lot"
+part_flow_chgng_rec_lot_jp = 'ロット番号__________'
+"""Flowseet component for class Charging. A recording element for the lot number of a material"""
+
+tag_part_flow_chgng_rec_hose = "tag_chgng_rec_hose"
+part_flow_chgng_rec_hose_jp ='溶媒用フレキID__________'
+"""Flowseet component for class Charging. A recording element for the ID of flexible tube for solvents"""
+
+tag_part_flow_chgng_rec_temprini = "tag_chgng_rec_temprini"
+part_flow_chgng_rec_temprini_jp = '開始時内温_______℃'
+"""Flowseet component for class Charging. A recording element for initial temperature of a certain action"""
+
+tag_part_flow_chgng_rec_temprmax = "tag_chgng_rec_temprmax"
+part_flow_chgng_temprmax_jp = '仕込み時最高内温_______℃'
+"""Flowseet component for class Charging. A recording element for the maximum temperature"""
+
+tag_part_flow_chgng_rec_temprmin = "tag_chgng_rec_temprmin"
+part_flow_chgng_temprmin_jp = '仕込み時最低内温_______℃'
+"""Flowseet component for class Charging. A recording element for the minimum"""
+
+tag_part_flow_chgng_rec_temprend = "tag_chgng_rec_temprend"
+part_flow_chgng_temprend_jp = '終了時内温_______℃'
+"""Flowseet component for class Charging. A recording element for the terminal temperature"""
+
+tag_part_flow_chgng_rec_cmpltd = "tag_chgng_rec_cmpltd"
+part_flow_chgng_cmpltd_jp ='□ 仕込み実施'
+"""Flowseet component for class Charging. A check box for complete charging/dosing"""
