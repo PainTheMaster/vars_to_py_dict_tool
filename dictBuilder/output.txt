@@ -1,0 +1,4 @@
+{tag_stc_tempr_ctrl_Tj_sp : stc_tempr_ctrl_Tj_sp_jp,
+tag_stc_tempr_ctrl_Ti_Tj_config : stc_tempr_ctrl_Ti_Tj_config_jp,
+tag_stc_tempr_ctrl_Ti_range : stc_tempr_ctrl_Ti_range_jp,
+tag_stc_tempr_ctrl_Ti_tgt_range : stc_tempr_ctrl_Ti_tgt_range_jp}

@@ -42,6 +42,12 @@ func main() {
 	out_buffer = strings.TrimSuffix(out_buffer, ",\n")
 	out_buffer = strings.Join([]string{"{", out_buffer, "}"}, "")
 	print(out_buffer)
+
+	byte_buffer := []byte(out_buffer)
+	f_out, _ := os.Create("output.txt")
+	defer f_out.Close()
+	f_out.Write(byte_buffer)
+
 }
 
 func Purify(lines iter.Seq[string]) []string {

@@ -1,23 +1,16 @@
-tag_part_flow_chgng_mthd_liq = opt_uo_chgng_method_liq = 'liquid_port'
-part_flow_chgng_mthd_liq = "液体投入口"
-"""
-Flowsheet component for class Charging. Charging through liquid charging port. An ption for Liquid charging.
-"""
-
-tag_part_flow_chgng_mthd_shower = opt_uo_chgng_method_shower = 'shower'
-part_flow_chgng_mthd_shower = "常設シャワー"
-"""
-Flowsheet component for class Charging. Charging through the fixed shower. An ption for Liquid charging."""
-
-tag_part_flow_chgng_mthd_prssvesl = opt_uo_chgng_method_prssvesl = 'press_vessel'
-part_flow_chgng_mthd_prssvesl = "圧送容器"
-"""Flowsheet component for class Charging. Charging from a pressure vessel. An ption for Liquid charging.
-"""
-
-tag_part_flow_chgng_mthd_ = opt_uo_chgng_method_pwdr ='powder_port'
-part_flow_chgng_mthd_pwdr = "粉体投入口"
-"""Flowsheet component for class Charging. Charging through the power port. An ption for powder charging."""
-
-tag_part_flow_chgng_mthd_ = opt_uo_chgng_method_method_plchldr = 'placeholder'
-part_flow_chgng_mthd_plchldr = "<Placeholder: charging method>"
-"""Flowsheet component for class Charging. A place holder. An ption for Liquid charging."""
+tag_stc_tempr_ctrl_Tj_sp:str = "Tj set point"
+"""Tag for an instruction sentece for temperature control. Tj set point."""
+stc_tempr_ctrl_Tj_sp_jp:str = "外温設定{Tj} ℃"
+"""Sentence template for temperature control. Tj set point. Includes placeholder{Tj}"""
+tag_stc_tempr_ctrl_Ti_Tj_config:str = "Ti/Tj control"
+"""Tag for an instruction sentece for temperature control. Ti/Tj configuration."""
+stc_tempr_ctrl_Ti_Tj_config_jp:str = "内外温制御: 内温{Ti} ℃、外温{Tj_low}～{Tj_high} ℃"
+"""Sentence template for temperature control. Ti/Tj configuraiton. Includes placeholder{Ti}, {Tj_low}, and {Tj_high}"""
+tag_stc_tempr_ctrl_Ti_range:str = "Ti range"
+"""Tag for an instruction sentece for temperature control. Ti range"""
+stc_tempr_ctrl_Ti_range_jp:str = "内温管理幅{Ti_low}～{Ti_high} ℃"
+"""Sentence template for temperature control. Ti range. includes placeholder {Ti_low} and {Ti_high}"""
+tag_stc_tempr_ctrl_Ti_tgt_range:str = "Ti range"
+"""Tag for an instruction sentece for temperature control. Ti target range"""
+stc_tempr_ctrl_Ti_tgt_range_jp:str = "内温目標幅{Ti_low}～{Ti_high} ℃"
+"""Sentence template for temperature control. Ti target range. includes placeholder {Ti_low} and {Ti_high}"""

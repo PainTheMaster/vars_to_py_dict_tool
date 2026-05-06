@@ -1,0 +1,4 @@
+[opt_uo_tempr_ctrl_mode_TiTj,
+opt_uo_tempr_ctrl_mode_Tj,
+opt_uo_tempr_ctrl_mode_ramp,
+opt_uo_tempr_ctrl_mode_Ti]

@@ -12,8 +12,8 @@ func main() {
 	defer f.Close()
 
 	text := ""
+	size_buf := 128
 	for {
-		size_buf := 128
 		buf := make([]byte, size_buf)
 		n, _ := f.Read(buf)
 
@@ -35,6 +35,12 @@ func main() {
 	out_buffer = strings.TrimSuffix(out_buffer, ",\n")
 	out_buffer = strings.Join([]string{"[", out_buffer, "]"}, "")
 	print(out_buffer)
+
+	byte_buffer := []byte(out_buffer)
+
+	f_new, _ := os.Create("out.txt")
+	defer f_new.Close()
+	f_new.Write(byte_buffer)
 }
 
 func Purify(lines iter.Seq[string]) []string {
