@@ -45,26 +45,39 @@ func main() {
 
 func Import(lines iter.Seq[string]) string {
 	is_comment := false
+	skip_comment := false
 	var output_buf string
 	for single_line := range lines {
 		if strings.HasPrefix(single_line, "\"\"\"") {
-			output_buf += single_line
+			if !skip_comment {
+				output_buf += single_line
+			}
 			if !strings.HasSuffix(single_line, "\"\"\"\r\n") {
 				is_comment = true
+			} else if skip_comment {
+				skip_comment = false
 			}
 			continue
 		}
 		if is_comment {
-			output_buf += single_line
+			if !skip_comment {
+				output_buf += single_line
+			}
 			if strings.HasSuffix(single_line, "\"\"\"\r\n") {
 				is_comment = false
+				skip_comment = false
 			}
 			continue
 		}
 		space_trimmed := strings.ReplaceAll(single_line, " ", "")
 		split_eq := strings.Split(space_trimmed, "=")
 		if len(split_eq) >= 2 {
+			skip_comment = false
 			keyword := (strings.Split(split_eq[0], ":")[0])
+			if !strings.HasPrefix(keyword, "tag") && !strings.HasPrefix(keyword, "hedr") {
+				skip_comment = true
+				continue
+			}
 			to_join := []string{keyword, " = defs.", keyword, "\n"}
 			output_buf += strings.Join(to_join, "")
 		}

@@ -1,4 +1,3 @@
-{tag_stc_tempr_ctrl_Tj_sp : stc_tempr_ctrl_Tj_sp_jp,
-tag_stc_tempr_ctrl_Ti_Tj_config : stc_tempr_ctrl_Ti_Tj_config_jp,
-tag_stc_tempr_ctrl_Ti_range : stc_tempr_ctrl_Ti_range_jp,
-tag_stc_tempr_ctrl_Ti_tgt_range : stc_tempr_ctrl_Ti_tgt_range_jp}
+{hedr_uo_agitation_spec : list_opt_uo_agitation_spec,
+hedr_uo_agitation_time_unit : list_opt_uo_agitation_time_unit,
+hedr_uo_agitation_dissolution_check : list_opt_uo_agitation_dissolution_check}

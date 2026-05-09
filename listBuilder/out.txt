@@ -1,4 +1,8 @@
-[opt_uo_tempr_ctrl_mode_TiTj,
-opt_uo_tempr_ctrl_mode_Tj,
-opt_uo_tempr_ctrl_mode_ramp,
-opt_uo_tempr_ctrl_mode_Ti]
+[hedr_uo_agitation_spec,
+hedr_uo_agitation_rpm,
+hedr_uo_agitation_Ti_min,
+hedr_uo_agitation_max,
+hedr_uo_agitation_time_min,
+hedr_uo_agitation_time_max,
+hedr_uo_agitation_time_unit,
+hedr_uo_agitation_dissolution_check]
